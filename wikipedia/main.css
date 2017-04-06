@@ -1,0 +1,23 @@
+form{
+    width: 500px;
+    border-radius: 20px;
+    background: lightblue;
+    border: 1px solid lightskyblue;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+form input{
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+#spellcheckresult div{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Tous mon talent en design est passé par là */
