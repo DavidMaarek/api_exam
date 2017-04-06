@@ -12,7 +12,7 @@ var spellcheck = function (data) {
             url ='http://fr.wikipedia.org/wiki/' + text;
             document.getElementById('spellcheckresult').innerHTML = '<div style="color:green">Résultat trouvé !</div><a target="_top" href="' + url + '">Lien vers la page</a> (ou vu direct en dessous). Vous pouvez changez la valeur si vous le souhaitez';
             $('#result').empty();
-            $('#result').append('<iframe src="'+url+'" style="height: 600px; width: 100%;" name="myFrame"/>');
+            $('#result').append('<iframe src="'+url+'" style="height: 400px; width: 80%; margin: auto;display: block;" name="myFrame">');
         }
     }
 

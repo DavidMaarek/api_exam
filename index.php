@@ -35,7 +35,7 @@ if($session)
     $request = new \Facebook\FacebookRequest($session, 'GET', '/me');
     $profile = $request->execute()->getGraphObject('Facebook\GraphUser');
     $_SESSION['prenom'] = explode(' ', $profile->getName())[0];
-    $_SESSION['nomComplet'] = $profile->getName();
+    $_SESSION['nomcomplet'] = $profile->getName();
 }
 else
 {

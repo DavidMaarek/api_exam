@@ -12,8 +12,6 @@ $("#search_form").submit(function(e) {
     searchQuery = "hello";
   }
 
-
-
   $.ajax({
     type: "GET",
     dataType: "jsonp",

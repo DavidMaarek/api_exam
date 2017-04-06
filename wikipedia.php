@@ -6,8 +6,6 @@ if(isset($_SESSION['prenom']))
     $prenom = $_SESSION['prenom'];
 }
 
-session_destroy();
-
 ?>
 <!DOCTYPE html>
 <html>
@@ -33,5 +31,7 @@ session_destroy();
             <?php }?>
         </form>
         <div id="result"></div>
+        <h2 style="text-align: center;">Voici vos images sur google image</h2>
+        <iframe src="search.php" style="height: 400px; width: 80%; margin: auto;display: block;" name="myFrame">
     </body>
 </html>
