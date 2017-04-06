@@ -1,0 +1,12 @@
+{
+    "name": "ecv/apiexam",
+    "authors": [
+        {
+            "name": "David Maarek",
+            "email": "davidmaarek55@gmail.com"
+        }
+    ],
+    "require": {
+        "facebook/graph-sdk" : "4.0.*"
+    }
+}
