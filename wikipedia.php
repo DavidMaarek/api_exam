@@ -5,6 +5,9 @@ if(isset($_SESSION['prenom']))
 {
     $prenom = $_SESSION['prenom'];
 }
+
+session_destroy();
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -23,7 +26,8 @@ if(isset($_SESSION['prenom']))
             <?php if(isset($prenom)){?>
                 <script>
                     $(function(){
-                        getjs($('#spellcheckinput').val('<?php echo $prenom; ?>'));
+                        $('#spellcheckinput').val('<?php echo $prenom; ?>');
+                        getjs($('#spellcheckinput').val());
                     });
                 </script>
             <?php }?>
