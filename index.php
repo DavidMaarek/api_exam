@@ -37,10 +37,20 @@ if($session)
     var_dump($profile->getName());
     $_SESSION['prenom'] = explode(' ', $profile->getName())[0];
     var_dump($_SESSION);
-    header('location: wikipedia.php');
+    //header('location: wikipedia.php');
 
 }
 else
 {
     echo '<a href="'.$helper->getLoginUrl(['email']).'">Se connecter avec Facebook</a>';
+}
+
+if(isset($_SESSION['prenom'])) {
+    ?>
+
+    <script>
+        document.location.href = "wikipedia.php"
+    </script>
+
+    <?php
 }
