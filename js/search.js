@@ -28,7 +28,6 @@ $("#search_form").submit(function(e) {
 
 
     //alert("Success");
-    console.log(data);
     var googleResults = data.items;
 
     $(".result li").remove();
