@@ -34,11 +34,8 @@ if($session)
     $_SESSION['fb_token'] = $session->getToken();
     $request = new \Facebook\FacebookRequest($session, 'GET', '/me');
     $profile = $request->execute()->getGraphObject('Facebook\GraphUser');
-    var_dump($profile->getName());
     $_SESSION['prenom'] = explode(' ', $profile->getName())[0];
-    var_dump($_SESSION);
-    //header('location: wikipedia.php');
-
+    $_SESSION['nomComplet'] = $profile->getName();
 }
 else
 {
