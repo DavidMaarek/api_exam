@@ -5,7 +5,6 @@
  * Date: 06/04/2017
  * Time: 17:06
  */
-
 use Facebook\FacebookRedirectLoginHelper;
 use Facebook\FacebookSession;
 
@@ -39,15 +38,13 @@ if($session)
 }
 else
 {
-    echo '<a href="'.$helper->getLoginUrl(['email']).'">Se connecter avec Facebook</a>';
+    echo '<a href="'.$helper->getLoginUrl(['email']).'"><img width="300px" src="http://www.andrewyuletea.com/images/facebook-login.png" alt="Se connecter avec facebook"/></a>';
 }
 
 if(isset($_SESSION['prenom'])) {
-    ?>
-
+?>
     <script>
         document.location.href = "wikipedia.php"
     </script>
-
-    <?php
+<?php
 }
