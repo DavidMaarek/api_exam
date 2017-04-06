@@ -14,3 +14,10 @@ form input{
     width: 100%;
     text-align: left;
 }
+
+#spellcheckresult div{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Tous mon talent en design est passé par là */
